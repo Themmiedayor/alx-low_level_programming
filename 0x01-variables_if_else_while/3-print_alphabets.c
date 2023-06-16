@@ -17,10 +17,10 @@ int main(void)
 		putchar(lowerCase);
 		lowerCase += 1;
 	}
-	while (upperCase <= 'Z')
+	while (uppercase <= 'Z')
 	{
-		putchar(upperCase);
-		upperCase += 1;
+		putchar(uppercase);
+		uppercase += 1;
 	}
 	putchar('\n');
 	return (0);
