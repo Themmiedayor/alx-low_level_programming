@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * print_number - print numbers chars
@@ -22,4 +22,3 @@ void print_number(int n)
 	}
 	_putchar((n1 % 10) + '0');
 }
-
