@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  * _strstr - Entry point
  * @haystack: input
@@ -9,20 +7,20 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-        for (; *haystack != '\0'; haystack++)
-        {
-                char *one = haystack;
-                char *two = needle;
+	for (; *haystack != '\0'; haystack++)
+	{
+		char *l = haystack;
+		char *p = needle;
 
-                while (*one == *two && *two != '\0')
-                {
-                        one++;
-                        two++;
-                }
+		while (*l == *p && *p != '\0')
+		{
+			l++;
+			p++;
+		}
 
-                if (*two == '\0')
-                        return (haystack);
-        }
+		if (*p == '\0')
+			return (haystack);
+	}
 
-        return (NULL);
+	return (0);
 }
